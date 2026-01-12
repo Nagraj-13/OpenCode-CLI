@@ -12,7 +12,7 @@ async def main():
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "Whats up"}, 
     ]
-    async for event in client.chat_completion(messages,False):
+    async for event in client.chat_completion(messages,True):
         print(event)
     
 if __name__ == "__main__":
