@@ -57,7 +57,7 @@ class CLI:
 
 async def run(messages: dict[str, Any]):
     client = LLMClient()
-    async for event in client.chat_completion(messages,True):
+    async for event in client.chat_completion(messages,False):
         print(event)
 
 @click.command()
